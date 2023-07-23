@@ -1,0 +1,215 @@
+header {
+    position: relative;
+    text-align: left;
+    margin-bottom: -4px;
+}
+header > img {
+    width: 100%;
+}
+header > h1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font: 300 2.5rem 'Work Sans';
+    padding-bottom: 10px;
+    color: #E6F7FF;
+    text-align: right;
+    border-bottom: 2px solid red;
+}
+
+.about-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-1 > img {
+    width: 40vw;
+    padding: 3rem 2rem 3rem 3rem;
+}
+.aboutus p{
+    padding: 3rem 3rem 3rem 2rem;
+    text-align: left;
+    font: 300 1.3rem/1.8rem 'Work Sans';
+}
+.aboutus > p {
+    padding-top: 0;
+}
+.aboutus a {
+    text-decoration: none;
+    color: #004f74;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.aboutus a:hover {
+    font-size: 1.4rem;
+    color: #006ea0;
+}
+.heading {
+    font: 400 1.4rem 'Work Sans';
+    color: #00344d;
+}
+
+.vision2030-header > h1{
+    top: 30%;
+    left: 12%;
+}
+.vision2030 {
+    background: rgba(32, 32, 32, 0.95);
+    color: #fae7e7;
+    padding-bottom: 3rem;
+}
+.vision2030 > h2 {
+    font: 300 1.6rem 'Work Sans';
+    border-bottom: 1px solid red;
+    margin: 0 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.vision2030 > p {
+    padding: 2rem 3rem;
+    font: 300 1.2rem/1.8rem 'Work Sans';
+}
+
+.vision>h2, .mission>h2, .goals>h2{
+    font: 300 1.6rem 'Work Sans';
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.vision, .mission {
+    width: 70%;
+    margin: 3rem;
+}
+.vision>h2, .goals>h2{
+    border-bottom: 2px solid red;
+}
+
+.mission > h2 {
+    border-bottom: 2px solid #007db7;
+    text-align: right;
+}
+.mission {
+    margin-left: auto;
+}
+.goals > h2{
+    width: 70%;
+    margin: 3rem 3rem 1rem 3rem;
+}
+.goals > ul {
+    margin: 0 3rem 3rem 3rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.goal {
+    width: 12rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #e0edf8;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: all 200ms ease-in-out;
+}
+.goal > img {
+    width: 2.5rem;
+    margin: 2rem auto;
+}
+.goal:hover {
+    transform: scale(1.05,1.05) translateY(-10px);
+}
+
+
+
+.contact-header{
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    text-align: left;
+    position: relative;
+    color: #001236;
+    border-bottom: 2px solid #0063BE;
+    border-top: 1px solid #001236;
+}
+header > p {
+    font: 300 1.5rem 'Work Sans';
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact-container {
+    display: flex;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: center;
+    background-color: #055e8b;
+    color: #e0edf8;
+    width: 40%;
+    padding: 3rem;
+}
+.contact-details > h2 {
+    font: 300 1.3rem 'Work Sans';
+    padding-bottom: 0.5rem ;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0edf8;
+}
+.contact-details > a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #e0edf8;
+}
+.contact-details > a > img {
+    width: 2.5rem;
+    padding: 0.5rem;
+}
+.contact-details > p {
+    text-align: left;
+    padding: 1rem;
+}
+input, textarea {
+    width: 80%;
+    display: block;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #3791ff;
+    color: white;
+    padding: 1rem 2rem;
+    max-width: 30%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #1268d0;
+}
+
+/* Add a background color and some padding around the form */
+.contact-form {
+    width: 70%;
+    background-color: #ceeeff;
+    padding: 5rem;
+}

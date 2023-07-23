@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Location</title>
+    <link rel="icon" href="./icons/logo.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+</head>
+<body>
+    <div class="load-container">
+        <div class="loader"></div>
+    </div>
+    <div class="contact-box">
+            <div id="contactPopup">
+                <span onclick=closeContact()><img src="./icons/closeBtn.svg" alt="Close"></span>
+                <p id="contactHeading">You can reach us by</p>
+                <p>Mailing us at :</p>
+                <a href="mailto:abd@targetlcit.com"><img src="./icons/mail.svg">  :  abd@targetlcit.com</a>
+                <p>Calling us at :</p>
+                <a href="tel:+9665555555"><img src="./icons/call.svg">  :  +966 55555555</a>
+            </div>
+    </div>
+    <nav>
+        <a href="#"><img src="./icons/logo.svg" alt="Target Location" class="logo"></a>
+        <ul>
+            <li class="nav-item active"><a href="#">HOME</a></li>
+            <li class="nav-item company-nav">
+                <a>COMPANY</a>
+                <div class="company-content">
+                    <a href="./aboutus.html">About Us</a>
+                    <a href="./vision2030.html">Vision 2030</a>
+                    <a href="./vision.html">Vision<br>and Mission</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="./services.html">OUR SERVICES</a></li>
+            <li class="nav-item"><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+        <a onclick=contact() class="contact"><img src="./icons/call.svg" alt="Contact Us"></a>
+    </nav>
+    <header>
+        <img src="./img/background.jpg" alt="Background" class="background">
+        <div class="title">
+            <h1>TARGET LOCATION</h1>
+            <h3>IT Solutions and Services</h3>
+            <p>Simplified Solutions for Smart companies</p>
+            <button onclick=contact() class="action-btn">Get Consultation Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section-1">
+            <div class="tagline">
+                <span>
+                    <p>Welcome to<br><span>Target Location</span></p>
+                    <p>Your one stop shop<br>for all your<br>IT requirements</p>
+                </span>
+            </div>
+            <div class="swiper slideshow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slides"><img src="./services/IT.jpg" alt=""></div>
+                    <div class="swiper-slide slides"><img src="./services/Network.jpg" alt=""></div>
+                    <div class="swiper-slide slides"><img src="./services/Security.jpg" alt=""></div>
+                    <div class="swiper-slide slides"><img src="./services/Software.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="section-2">
+            <p>Our<br>Services</p>
+            <div class="slider">
+                <div class="swiper services">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/network.jpg" alt="IT Equipment">
+                                <p>IT Equipment and<br> Management</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/software.png" alt="Software Services">
+                                <p>Software Services</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/software.png" alt="Development Services">
+                                <p>Development <br> Services</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/network.jpg" alt="Network Solutions">
+                                <p>Network Solutions<br>and Services</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/it.jpg" alt="Database Management">
+                                <p>Database <br> Management</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/security.jpg" alt="Security Services">
+                                <p>Security Services</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/it.jpg" alt="Systems Integration">
+                                <p>Systems Integration</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide service">
+                            <a href="./services.html/#">
+                                <img src="./services/network.jpg" alt="Process Management">
+                                <p>Process <br> Management</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="section-3">
+            <p>OUR PARTNERS</p>
+            <div class="partners-1">
+                <a href="http://"><img class="partner" src="./partners/dell.svg" alt="Dell"></a>
+                <a href="http://"><img class="partner" src="./partners/hp.svg" alt="HP"></a>
+                <a href="http://"><img class="partner" src="./partners/microsoft.svg" alt="Microsoft"></a>
+                <a href="http://"><img class="partner" src="./partners/logitech.svg" alt="Logitech"></a>
+            </div>
+            <div class="partners-2">
+                <a href="http://"><img class="partner" src="./partners/cisco.svg" alt="Cisco"></a>
+                <a href="http://"><img class="partner" src="./partners/kingston.svg" alt="Kingston"></a>
+                <a href="http://"><img class="partner" src="./partners/zoom.svg" alt="Zoom"></a>
+                <a href="http://"><img class="partner" src="./partners/clearone.svg" alt="ClearOne"></a>
+            </div>
+        </div>
+        <div class="section-4">
+            <p>OUR CUSTOMERS</p>
+            <div class="customers-1">
+                <a href="http://"><img class="customer" src="./customers/princeSultanUniversity.jpg" alt="Prince Sultan University"></a>
+                <a href="http://"><img class="customer" src="./customers/naifArabUniversity.jpg" alt="Naif Arab University"></a>
+                <a href="http://"><img class="customer" src="./customers/alYamamahUniversity.svg" alt="Al Yamamah University"></a>
+                <a href="http://"><img class="customer" src="./customers/ministryOfEducation.jpg" alt="Ministry of Education"></a>
+            </div>
+            <div class="customers-2">
+                <a href="http://"><img class="customer" src="./customers/ministryOfDefense.png" alt="Ministry of Defense"></a>
+                <a href="http://"><img class="customer" src="./customers/mahadAlIdara.svg" alt="Mahad Al Idara"></a>
+                <a href="http://"><img class="customer" src="./customers/saudiElectricityCompany.png" alt="Saudi Electricity Company"></a>
+                <a href="http://"><img class="customer" src="./customers/alfanar.png" alt="Alfanar"></a>
+            </div>
+            <div class="customers-3">
+                <a href="http://"><img class="customer" src="./customers/alpaco.jpeg" alt="Alpaco"></a>
+                <a href="http://"><img class="customer" src="./customers/liajlehumAssociation.jpg" alt="Liajlehum Association"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">
+            <div class="footer-1">
+                <img src="./icons/logo.svg" alt="Target Location">
+                <h4>TARGET LOCATION</h4>
+                <p>IT Solutions and Services<p>
+            </div>
+        </a>
+        <div class="footer-2">
+            <p>COMPANY</p>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./vision2030.html">Vision 2030</a>
+            <a href="./vision.html">Vision and Mission</a>
+        </div>
+        <div class="footer-3">
+            <p>OUR SERVICES</p>
+            <div>
+                <div>
+                    <a href="./services.html/#">IT Equipment and<br> Management</a>
+                    <a href="./services.html/#">Software Services</a>
+                    <a href="./services.html/#">Development <br> Services</a>
+                    <a href="./services.html/#">Network Solutions<br>and Services</a>
+                </div>
+                <div>
+                    <a href="./services.html/#">Database <br> Management</a>
+                    <a href="./services.html/#">Security Services</a>
+                    <a href="./services.html/#">Systems Integration</a>
+                    <a href="./services.html/#">Process <br> Management</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-4">
+            <a href="./contact.html" class="footer-contact">CONTACT US</a>
+            <a href="tel:+9665555555">+9665555555</a>
+            <a href="mailto:abd@targetlcit.com">abd@targetlcit.com</a>
+        </div>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
