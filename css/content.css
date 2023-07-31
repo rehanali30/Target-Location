@@ -26,6 +26,19 @@ header > h1 {
     width: 40vw;
     padding: 3rem 2rem 3rem 3rem;
 }
+@media (max-width: 680px){
+    header > h1 {
+        top: 30%;
+        left: 7%;
+        font-size: 2.2rem;
+    }
+    .about-1 {
+        flex-direction: column-reverse;
+    }
+    .about-1 > img {
+        width: 80vw;
+    }
+}
 .aboutus p{
     padding: 3rem 3rem 3rem 2rem;
     text-align: left;
@@ -48,6 +61,7 @@ header > h1 {
 .heading {
     font: 400 1.4rem 'Work Sans';
     color: #00344d;
+    text-align: center;
 }
 
 .vision2030-header > h1{
@@ -117,12 +131,91 @@ header > h1 {
     box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
     transition: all 200ms ease-in-out;
 }
+@media (max-width: 350px){
+    .goal {
+        width: 10rem;
+        height: 15rem;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 310px){
+    .goal {
+        width: 8.5rem;
+        height: 14rem;
+        font-size: 0.7rem;
+    }
+}
 .goal > img {
-    width: 2.5rem;
+    width: 3rem;
     margin: 2rem auto;
 }
 .goal:hover {
     transform: scale(1.05,1.05) translateY(-10px);
+}
+
+
+
+.service-header > h1 {
+    background-color: rgba(0, 15, 31, 0.363);
+}
+.service-container {
+    border-top: 2px solid red;
+}
+.service-name {
+    font: 600 2rem 'Work Sans';
+    padding: 1rem;
+    margin: 1rem;
+}
+.service-container > h4:nth-child(2) {
+    text-align: center;
+    font-size: 1.3rem;
+}
+.service-container > h4 {
+    font: 400 1.1rem 'Work Sans';
+    padding: 1rem 2rem;
+}
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 3rem 3rem;
+    font: 400 1.1rem 'Work Sans';
+}
+@media (max-width: 480px){
+    .service-content {
+        font-size: 0.9rem;
+    }
+}
+.service-content > ul {
+    list-style: none;
+}
+.service-content > ul > li {
+    padding: 0.5rem;
+}
+.service-content > img {
+    width: 40vw;
+    height: max-content;
+}
+@media (max-width: 380px){
+    .service-content {
+        flex-direction: column-reverse;
+    }
+    .service-content > img {
+        width: 75vw;
+        margin: 2rem auto;
+    }
+}
+#ITSystems, #Development {
+    color: #011a4b;
+}
+#ITSystems>h3, #Development>h3 {
+    border-bottom: 1px solid red;
+}
+#Software, #Network {
+    background-color: #00417d;
+    color: #ddf2fe;
+}
+#Software>h3, #Network>h3 {
+    border-bottom: 1px solid #ceeeff;
 }
 
 
@@ -143,6 +236,7 @@ header > p {
     font: 300 1.5rem 'Work Sans';
     text-align: center;
     margin-bottom: 2rem;
+    padding: 0 2rem;
 }
 .contact-container {
     display: flex;
@@ -155,7 +249,7 @@ header > p {
     background-color: #055e8b;
     color: #e0edf8;
     width: 40%;
-    padding: 3rem;
+    padding: 2rem 0 0 2rem;
 }
 .contact-details > h2 {
     font: 300 1.3rem 'Work Sans';
@@ -170,6 +264,10 @@ header > p {
     padding: 1rem;
     text-decoration: none;
     color: #e0edf8;
+    transition: all 200ms ease-in-out;
+}
+.contact-details > a:hover {
+    background-color: #e6f7ff29;
 }
 .contact-details > a > img {
     width: 2.5rem;
@@ -209,7 +307,21 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .contact-form {
-    width: 70%;
+    width: 60%;
     background-color: #ceeeff;
     padding: 5rem;
+}
+@media (max-width: 650px){
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+    .contact-details {
+        padding: 3rem;
+    }
+    input,textarea {
+        font-size: 1rem;
+    }
 }

@@ -19,16 +19,18 @@
             <div id="contactPopup">
                 <span onclick=closeContact()><img src="./icons/closeBtn.svg" alt="Close"></span>
                 <p id="contactHeading">You can reach us by</p>
-                <p>Mailing us at :</p>
-                <a href="mailto:abd@targetlcit.com"><img src="./icons/mail.svg">  :  abd@targetlcit.com</a>
-                <p>Calling us at :</p>
-                <a href="tel:+9665555555"><img src="./icons/call.svg">  :  +966 55555555</a>
+                <p>Email:</p>
+                <a href="mailto:info@targetlcit.com" target="_blank"><img src="./icons/mail.svg">  :  info@targetlcit.com</a>
+                <p>Call:</p>
+                <a href="tel:+966550775889" target="_blank"><img src="./icons/call.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
+                <p>Whatsapp:</p>
+                <a href="https://wa.me/+966550775889" target="_blank"><img src="./icons/whatsapp.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
             </div>
     </div>
     <nav>
         <a href="./index.html"><img src="./icons/logo.svg" alt="Target Location" class="logo"></a>
-        <ul>
-            <li class="nav-item"><a href="./index.html">HOME</a></li>
+        <ul class="nav-list">
+            <li class="nav-item "><a href="./index.html">HOME</a></li>
             <li class="nav-item company-nav">
                 <a>COMPANY</a>
                 <div class="company-content">
@@ -38,8 +40,9 @@
                 </div>
             </li>
             <li class="nav-item"><a href="./services.html">OUR SERVICES</a></li>
-            <li class="nav-item active"><a href="#" >CONTACT US</a></li>
+            <li class="nav-item active"><a href="#">CONTACT US</a></li>
         </ul>
+        <a onclick=nav() class="nav-icon"><img src="./icons/navbar.svg" alt=""></a>
         <a onclick=contact() class="contact"><img src="./icons/call.svg" alt="Contact Us"></a>
     </nav>
     <header>
@@ -49,9 +52,9 @@
     <div class="contact-container">
         <div class="contact-details">
             <h2>Riyadh, Saudi Arabia</h2>
-            <a href="tel:+966 555555555"><img src="./icons/call.svg" alt="Call"> Call: +966 555555555</a>
-            <a href="htps://wa.me/+9665555555555"><img src="./icons/closeBtn.svg" alt="Whatsapp">Whatsapp: +966 555555555</a>
-            <a href="mailto:abd@targetlcit.com"><img src="./icons/mail.svg" alt="Mail">Email: abd@targetlci.com</a>
+            <a href="tel:+966 550775889"><img src="./icons/call-white.svg" alt="Call"> Call:<img src="./icons/saudi-arabia-flag.svg"> +966 550775889</a>
+            <a href="https://wa.me/+966550775889" target="_blank"><img src="./icons/whatsapp-color.svg" alt="Whatsapp">Whatsapp:<img src="./icons/saudi-arabia-flag.svg"> +966 550775889</a>
+            <a href="mailto:info@targetlcit.com"><img src="./icons/mail-white.svg" alt="Mail">Email: info@targetlci.com</a>
             <p>P.O. Box: 94036 <br> Postal Code: 116963</p>
         </div>
         <div class="contact-form">
@@ -85,33 +88,28 @@
                 <p>IT Solutions and Services<p>
             </div>
         </a>
-        <div class="footer-2">
-            <p>COMPANY</p>
-            <a href="./aboutus.html">About Us</a>
-            <a href="./vision2030.html">Vision 2030</a>
-            <a href="./vision.html">Vision and Mission</a>
-        </div>
-        <div class="footer-3">
-            <p>OUR SERVICES</p>
-            <div>
+        <div class="footer-content">
+            <div class="footer-2">
+                <p>COMPANY</p>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./vision2030.html">Vision 2030</a>
+                <a href="./vision.html">Vision and Mission</a>
+            </div>
+            <div class="footer-3">
+                <a href="./services.html" class="footer-link">OUR SERVICES</a>
                 <div>
-                    <a href="./services.html/#">IT Equipment and<br> Management</a>
-                    <a href="./services.html/#">Software Services</a>
-                    <a href="./services.html/#">Development <br> Services</a>
-                    <a href="./services.html/#">Network Solutions<br>and Services</a>
-                </div>
-                <div>
-                    <a href="./services.html/#">Database <br> Management</a>
-                    <a href="./services.html/#">Security Services</a>
-                    <a href="./services.html/#">Systems Integration</a>
-                    <a href="./services.html/#">Process <br> Management</a>
+                    <a href="./services.html#ITSystems">IT Systems and Accessories</a>
+                    <a href="./services.html#Software">Software Services</a>
+                    <a href="./services.html#Development">Development Services</a>
+                    <a href="./services.html#Network">Network Solutions<br>and Services</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-4">
-            <a href="#" class="footer-contact">CONTACT US</a>
-            <a href="tel:+9665555555">+9665555555</a>
-            <a href="mailto:abd@targetlcit.com">abd@targetlcit.com</a>
+            <div class="footer-4">
+                <a href="#" class="footer-link">CONTACT US</a>
+                <a href="tel:+966550775889">+966 550775889</a>
+                <a href="mailto:info@targetlcit.com">info@targetlcit.com</a>
+                <a href="https://wa.me/+966550775889" target="_blank">Whatsapp: <br>+966 550775889</a>
+            </div>
         </div>
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>

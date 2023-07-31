@@ -19,15 +19,17 @@
             <div id="contactPopup">
                 <span onclick=closeContact()><img src="./icons/closeBtn.svg" alt="Close"></span>
                 <p id="contactHeading">You can reach us by</p>
-                <p>Mailing us at :</p>
-                <a href="mailto:abd@targetlcit.com"><img src="./icons/mail.svg">  :  abd@targetlcit.com</a>
-                <p>Calling us at :</p>
-                <a href="tel:+9665555555"><img src="./icons/call.svg">  :  +966 55555555</a>
+                <p>Email:</p>
+                <a href="mailto:info@targetlcit.com" target="_blank"><img src="./icons/mail.svg">  :  info@targetlcit.com</a>
+                <p>Call:</p>
+                <a href="tel:+966550775889" target="_blank"><img src="./icons/call.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
+                <p>Whatsapp:</p>
+                <a href="https://wa.me/+966550775889" target="_blank"><img src="./icons/whatsapp.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
             </div>
     </div>
     <nav>
         <a href="./index.html"><img src="./icons/logo.svg" alt="Target Location" class="logo"></a>
-        <ul>
+        <ul class="nav-list">
             <li class="nav-item "><a href="./index.html">HOME</a></li>
             <li class="nav-item company-nav">
                 <a>COMPANY</a>
@@ -40,9 +42,82 @@
             <li class="nav-item active"><a href="#">OUR SERVICES</a></li>
             <li class="nav-item"><a href="./contact.html">CONTACT US</a></li>
         </ul>
+        <a onclick=nav() class="nav-icon"><img src="./icons/navbar.svg" alt=""></a>
         <a onclick=contact() class="contact"><img src="./icons/call.svg" alt="Contact Us"></a>
     </nav>
-    
+    <header class="service-header">
+        <img src="./img/services.jpg" alt="Services">
+        <h1>Let's Make Your Vision <br>into a Reality</h1>
+    </header>
+    <div id="ITSystems" class="service-container">
+        <h3 class="service-name">IT Systems and Accessories</h3>
+        <h4>We provide everything you need from Servers, down to a small Hard Disk</h4>
+        <h4>Some of the products we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Servers</li>
+                <li>Desktops</li>
+                <li>Laptops</li>
+                <li>All-in-Ones</li>
+                <li>Monitors</li>
+                <li>Keyboards and Mouse</li>
+                <li>Printers and Scanners</li>
+                <li>Computer Components:<br>CPU, GPU, SSD, Hard Drive, RAM, etc.</li>
+            </ul>
+            <img src="./services/it.jpg" alt="IT Systems">
+        </div>
+    </div>
+    <div id="Software" class="service-container">
+        <h3 class="service-name">Software Services</h3>
+        <h4>Accomplish your goals efficiently and swiftly with our provided softwares</h4>
+        <h4>Softwares we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Windows OS</li>
+                <li>Microsoft Office</li>
+                <li>Anti-Virus and Anti-Malware Software</li>
+                <li>Cloud Storage</li>
+                <li>Process Management Software</li>
+                <li>Video Conference Software</li>
+            </ul>
+            <img src="./services/it.jpg" alt="IT Systems">
+        </div>
+    </div>
+    <div id="Development" class="service-container">
+        <h3 class="service-name">Development Services</h3>
+        <h4>Create your presence online with our development services</h4>
+        <h4>Services we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Website Name</li>
+                <li>Website Hosting</li>
+                <li>Company Email</li>
+                <li>Website Design</li>
+                <li>Website Development</li>
+                <li>IOS and Android Application Development</li>
+                <li>Database Management</li>
+                <li>Payment Gateway Integration</li>
+            </ul>
+            <img src="./services/it.jpg" alt="IT Systems">
+        </div>
+    </div>
+    <div id="Network" class="service-container">
+        <h3 class="service-name">Network Solutions and Services</h3>
+        <h4>Get reliable and fast network solutions and services to accomplish your vision seemlessly</h4>
+        <h4>Network solutions we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Network Server</li>
+                <li>IP Server</li>
+                <li>Network Switches</li>
+                <li>Systems Integration</li>
+                <li>Setup and Installation</li>
+                <li>CCTV Cameras and Installation</li>
+            </ul>
+            <img src="./services/it.jpg" alt="IT Systems">
+        </div>
+    </div>
+
     <footer>
         <a href="./index.html">
             <div class="footer-1">
@@ -51,33 +126,28 @@
                 <p>IT Solutions and Services<p>
             </div>
         </a>
-        <div class="footer-2">
-            <p>COMPANY</p>
-            <a href="./aboutus.html">About Us</a>
-            <a href="./vision2030.html">Vision 2030</a>
-            <a href="./vision.html">Vision and Mission</a>
-        </div>
-        <div class="footer-3">
-            <p>OUR SERVICES</p>
-            <div>
+        <div class="footer-content">
+            <div class="footer-2">
+                <p>COMPANY</p>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./vision2030.html">Vision 2030</a>
+                <a href="./vision.html">Vision and Mission</a>
+            </div>
+            <div class="footer-3">
+                <a href="./services.html" class="footer-link">OUR SERVICES</a>
                 <div>
-                    <a href="./services.html/#">IT Equipment and<br> Management</a>
-                    <a href="./services.html/#">Software Services</a>
-                    <a href="./services.html/#">Development <br> Services</a>
-                    <a href="./services.html/#">Network Solutions<br>and Services</a>
-                </div>
-                <div>
-                    <a href="./services.html/#">Database <br> Management</a>
-                    <a href="./services.html/#">Security Services</a>
-                    <a href="./services.html/#">Systems Integration</a>
-                    <a href="./services.html/#">Process <br> Management</a>
+                    <a href="./services.html#ITSystems">IT Systems and Accessories</a>
+                    <a href="./services.html#Software">Software Services</a>
+                    <a href="./services.html#Development">Development Services</a>
+                    <a href="./services.html#Network">Network Solutions<br>and Services</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-4">
-            <a href="./contact.html" class="footer-contact">CONTACT US</a>
-            <a href="tel:+9665555555">+9665555555</a>
-            <a href="mailto:abd@targetlcit.com">abd@targetlcit.com</a>
+            <div class="footer-4">
+                <a href="./contact.html" class="footer-link">CONTACT US</a>
+                <a href="tel:+966550775889">+966 550775889</a>
+                <a href="mailto:info@targetlcit.com">info@targetlcit.com</a>
+                <a href="https://wa.me/+966550775889" target="_blank">Whatsapp: <br>+966 550775889</a>
+            </div>
         </div>
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>

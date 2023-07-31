@@ -19,16 +19,18 @@
             <div id="contactPopup">
                 <span onclick=closeContact()><img src="./icons/closeBtn.svg" alt="Close"></span>
                 <p id="contactHeading">You can reach us by</p>
-                <p>Mailing us at :</p>
-                <a href="mailto:abd@targetlcit.com"><img src="./icons/mail.svg">  :  abd@targetlcit.com</a>
-                <p>Calling us at :</p>
-                <a href="tel:+9665555555"><img src="./icons/call.svg">  :  +966 55555555</a>
+                <p>Email:</p>
+                <a href="mailto:info@targetlcit.com" target="_blank"><img src="./icons/mail.svg">  :  info@targetlcit.com</a>
+                <p>Call:</p>
+                <a href="tel:+966550775889" target="_blank"><img src="./icons/call.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
+                <p>Whatsapp:</p>
+                <a href="https://wa.me/+966550775889" target="_blank"><img src="./icons/whatsapp.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
             </div>
     </div>
     <nav>
         <a href="./index.html"><img src="./icons/logo.svg" alt="Target Location" class="logo"></a>
-        <ul>
-            <li class="nav-item"><a href="./index.html">HOME</a></li>
+        <ul class="nav-list">
+            <li class="nav-item "><a href="./index.html">HOME</a></li>
             <li class="nav-item company-nav active">
                 <a>COMPANY</a>
                 <div class="company-content">
@@ -40,6 +42,7 @@
             <li class="nav-item"><a href="./services.html">OUR SERVICES</a></li>
             <li class="nav-item"><a href="./contact.html">CONTACT US</a></li>
         </ul>
+        <a onclick=nav() class="nav-icon"><img src="./icons/navbar.svg" alt=""></a>
         <a onclick=contact() class="contact"><img src="./icons/call.svg" alt="Contact Us"></a>
     </nav>
     <header class="about-header">
@@ -50,7 +53,7 @@
         <div class="about-1">
             <img src="./img/about1.jpg" alt="">
             <p><span class="heading">Welcome to Target Location, your number one source for all things related to IT.</span><br>
-                 We're dedicated to giving you the very best of servic-es, with a focus on dependability, customer service, and uniqueness.
+                 We're dedicated to giving you the very best of services, with a focus on dependability, customer service, and uniqueness.
                  Target Location has come a long way from its beginnings.
                  When we first started, our passion for providing the best equipment for our fellow companies drove us to start a booming IT office.
                  We now serve customers all over Saudi Arabia and were thrilled to be a part of the fantastic wing of the IT service industry.</p>
@@ -66,33 +69,28 @@
                 <p>IT Solutions and Services<p>
             </div>
         </a>
-        <div class="footer-2">
-            <p>COMPANY</p>
-            <a href="#">About Us</a>
-            <a href="./vision2030.html">Vision 2030</a>
-            <a href="./vision.html">Vision and Mission</a>
-        </div>
-        <div class="footer-3">
-            <p>OUR SERVICES</p>
-            <div>
+        <div class="footer-content">
+            <div class="footer-2">
+                <p>COMPANY</p>
+                <a href="#">About Us</a>
+                <a href="./vision2030.html">Vision 2030</a>
+                <a href="./vision.html">Vision and Mission</a>
+            </div>
+            <div class="footer-3">
+                <a href="./services.html" class="footer-link">OUR SERVICES</a>
                 <div>
-                    <a href="./services.html/#">IT Equipment and<br> Management</a>
-                    <a href="./services.html/#">Software Services</a>
-                    <a href="./services.html/#">Development <br> Services</a>
-                    <a href="./services.html/#">Network Solutions<br>and Services</a>
-                </div>
-                <div>
-                    <a href="./services.html/#">Database <br> Management</a>
-                    <a href="./services.html/#">Security Services</a>
-                    <a href="./services.html/#">Systems Integration</a>
-                    <a href="./services.html/#">Process <br> Management</a>
+                    <a href="./services.html#ITSystems">IT Systems and Accessories</a>
+                    <a href="./services.html#Software">Software Services</a>
+                    <a href="./services.html#Development">Development Services</a>
+                    <a href="./services.html#Network">Network Solutions<br>and Services</a>
                 </div>
             </div>
-        </div>
-        <div class="footer-4">
-            <a href="./contact.html" class="footer-contact">CONTACT US</a>
-            <a href="tel:+9665555555">+9665555555</a>
-            <a href="mailto:abd@targetlcit.com">abd@targetlcit.com</a>
+            <div class="footer-4">
+                <a href="./contact.html" class="footer-link">CONTACT US</a>
+                <a href="tel:+966550775889">+966 550775889</a>
+                <a href="mailto:info@targetlcit.com">info@targetlcit.com</a>
+                <a href="https://wa.me/+966550775889" target="_blank">Whatsapp: <br>+966 550775889</a>
+            </div>
         </div>
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>
