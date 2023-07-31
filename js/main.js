@@ -1,18 +1,41 @@
 function nav() {
   var navbar = document.querySelector(".nav-list");
   var navitems = document.querySelectorAll(".nav-item")
-  if (navbar.style.opacity == "1") {
-    navitems.forEach((navitem) => {
-      navitem.style.display = "none"
-    })
-    navbar.style.opacity = "0"
+  if (screen.width <= 550)
+  {
+    if (navbar.style.opacity == "1") {
+      navitems.forEach((navitem) => {
+        navitem.style.display = "none"
+      })
+      navbar.style.opacity = "0"
+    }
+    else {
+      navitems.forEach((navitem) => {
+        navitem.style.display = "block"
+      })
+      navbar.style.height = "max-content"
+      navbar.style.opacity = "1"
+    }
   }
-  else {
-    navitems.forEach((navitem) => {
-      navitem.style.display = "block"
-    })
-    navbar.style.height = "max-content"
-    navbar.style.opacity = "1"
+}
+
+function company() {
+  var companyContent = document.querySelector("company-content");
+  var companyItems = document.querySelectorAll(".company-item")
+  if (screen.width <= 550) {
+    if (companyContent.style.opacity == "1") {
+      companyItems.forEach((companyItem) => {
+        companyItem.style.display = "none"
+      })
+      companyContent.style.opacity = "0"
+    }
+    else {
+      companyItems.forEach((companyItem) => {
+        companyItem.style.display = "block"
+      })
+      companyContent.style.height = "max-content"
+      companyContent.style.opacity = "1"
+    }
   }
 }
 
