@@ -58,6 +58,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    padding: 1rem 0;
 
 }
 .nav-icon {
@@ -66,8 +67,12 @@ nav {
 .nav-icon>img {
     width: 2rem;
 }
+.nav-item {
+    margin: 0.5rem 0;
+}
 .nav-item > a{
     padding: 1rem 2rem;
+    margin: 1rem 0;
     height: min-content;
     cursor: pointer;
     text-decoration: none;
