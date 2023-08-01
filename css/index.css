@@ -64,16 +64,7 @@ header {
         top: 25%;
     }
     .title>h1 {
-        font-size: 2rem;
-    }
-    .action-btn {
-        font-size: 0.8rem;
-        padding: 0.8rem;
-    }
-}
-@media (max-width: 350px){
-    .title>h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .title>h3 {
         font-size: 1.2rem;
@@ -81,7 +72,12 @@ header {
     .title>p {
         font-size: 1.2rem;
     }
+    .action-btn {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
 }
+
 
 .section-1{
     display: flex;
@@ -212,6 +208,9 @@ header {
     .slider {
         border-right: 2px solid red;
         width: 90vw;
+    }
+    .service:hover img {
+        width: 95%;
     }
 }
 

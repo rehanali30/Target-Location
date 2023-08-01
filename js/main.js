@@ -62,18 +62,18 @@ const slideshow = new Swiper('.slideshow', {
         el: '.swiper-pagination',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.slide-next',
+      prevEl: '.slide-prev',
     },
     autoplay: {
         delay: 3000,
+        disableOnInteraction: false,
     }
 });
 
 
 
 var services = new Swiper(".services", {
-  loop: true,
   spaceBetween: (screen.width <= 550)?((screen.width <= 450)?20:30):40,
   slidesPerView: (screen.width <= 550)?2:3,
   centeredSlides: true,
@@ -82,8 +82,8 @@ var services = new Swiper(".services", {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.service-next',
+    prevEl: '.service-prev',
   },
   autoplay: {
     delay: 3000,

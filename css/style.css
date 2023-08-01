@@ -145,6 +145,9 @@ nav {
     text-decoration: underline red 2px;
 }
 @media screen and (max-width: 550px) {
+    nav {
+        font-size: 1.5rem;
+    }
     .nav-list{
         opacity: 0;
         position: absolute;
@@ -165,6 +168,12 @@ nav {
         display: none;
         padding: 1rem 2rem;
     }
+    .logo {
+        max-width: 5rem;
+    }
+    .nav-icon>img {
+        width: 4rem;
+    }
 	.nav-icon  {
 		display: block;
         margin: auto 0;
@@ -175,6 +184,9 @@ nav {
     }
     .company-nav:hover .company-item {
         display: unset;
+    }
+    .contact > img{
+        max-width: 2.5rem;
     }
 }
 
@@ -205,6 +217,10 @@ footer a:hover {
 @media (max-width: 680px){
     footer {
         flex-direction: column;
+    }
+    footer>a {
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
     .footer-content {
         width: 100%;
