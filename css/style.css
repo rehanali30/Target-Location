@@ -127,6 +127,9 @@ nav {
     text-decoration: underline red 1px;
     background-color: rgba(0,0,0,0.1);
 }
+.company-item:first-child {
+    margin-top: 1rem;
+}
 .company-nav:hover .company-content{
     opacity: 1;
     height: max-content;
@@ -156,9 +159,6 @@ nav {
     .company-content {
         position: unset;
         background: #e4f0fc;
-    }
-    .company-item:first-child {
-        margin-top: 1rem;
     }
     .nav-item {
         display: none;

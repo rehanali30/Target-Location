@@ -39,6 +39,14 @@ header > h1 {
         width: 80vw;
     }
 }
+@media (max-width: 500px){
+    .about-header > img{
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        object-fit:cover
+    }
+}
 .aboutus p{
     padding: 3rem 3rem 3rem 2rem;
     text-align: left;
@@ -193,9 +201,9 @@ header > h1 {
 }
 .service-content > img {
     width: 40vw;
-    height: max-content;
+    object-fit: contain;
 }
-@media (max-width: 380px){
+@media (max-width: 500px){
     .service-content {
         flex-direction: column-reverse;
     }
