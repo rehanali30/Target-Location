@@ -63,6 +63,7 @@ nav {
 }
 .nav-icon {
 	display: none;
+    padding: 0.7rem;
 }
 .nav-icon>img {
     width: 2rem;
