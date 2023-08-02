@@ -59,9 +59,9 @@
             <p>P.O. Box: 94036 <br> Postal Code: 116963</p>
         </div>
         <div class="contact-form">
-            <form action="action_page.php">
+            <form onsubmit="sendEmail(); reset(); return false;">
 
-                <label for="name">First Name</label>
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name..">
             
                 <label for="company">Company Name</label>
@@ -113,7 +113,25 @@
             </div>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken : "a36cf557-0b39-4a09-8634-0c840b492d97",
+                To : "info@targetlcit.com",
+                From : "salesenquiry@targetlocationit.com",
+                Subject : "New Sales Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                + "<br> Company: " + document.getElementById("company").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                () => alert("Message Sent Successfully!")
+            );
+            }
+    </script>
 </body>
 </html>
