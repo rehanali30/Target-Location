@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://targetlocationit.com/ourservices"/>
+    <title>Our Services</title>
+    <link rel="icon" href="./icons/logo.svg">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+</head>
+<body>
+    <div class="load-container">
+        <div class="loader"></div>
+    </div>
+    <div class="contact-box">
+            <div id="contactPopup">
+                <span onclick=closeContact()><img src="./icons/closeBtn.svg" alt="Close"></span>
+                <p id="contactHeading">You can reach us by</p>
+                <p>Email:</p>
+                <a href="mailto:info@targetlcit.com" target="_blank"><img src="./icons/mail.svg">  :  info@targetlcit.com</a>
+                <p>Call:</p>
+                <a href="tel:+966550775889" target="_blank"><img src="./icons/call.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
+                <p>Whatsapp:</p>
+                <a href="https://wa.me/+966550775889" target="_blank"><img src="./icons/whatsapp.svg">  :<img src="./icons/saudi-arabia-flag.svg">  +966 550775889</a>
+            </div>
+    </div>
+    <nav>
+        <a href="https://targetlocationit.com"><img src="./icons/logo.svg" alt="Target Location" class="logo"></a>
+        <ul class="nav-list">
+            <li class="nav-item "><a href="https://targetlocationit.com">HOME</a></li>
+            <li class="nav-item company-nav">
+                <a onclick="company()" class="company-btn">COMPANY</a>
+                <div class="company-content">
+                    <a class="company-item" href="https://targetlocationit.com/aboutus">About Us</a>
+                    <a class="company-item" href="https://targetlocationit.com/vision2030">Vision 2030</a>
+                    <a class="company-item" href="https://targetlocationit.com/visionandmission">Vision<br>and Mission</a>
+                </div>
+            </li>
+            <li class="nav-item active"><a href="#">OUR SERVICES</a></li>
+            <li class="nav-item"><a href="https://targetlocationit.com/contactus">CONTACT US</a></li>
+        </ul>
+        <a onclick=nav() class="nav-icon"><img src="./icons/navbar.svg" alt=""></a>
+        <a onclick=contact() class="contact"><img src="./icons/call.svg" alt="Contact Us"></a>
+    </nav>
+    <header class="service-header">
+        <img src="./img/services.jpg" alt="Services">
+        <h1>Let's Make Your Vision <br>into a Reality</h1>
+    </header>
+    <div id="ITSystems" class="service-container">
+        <h3 class="service-name">IT Systems and Accessories</h3>
+        <h4>We provide everything you need from Servers, down to a small Hard Disk</h4>
+        <h4>Some of the products we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Servers</li>
+                <li>Desktops</li>
+                <li>Laptops</li>
+                <li>All-in-Ones</li>
+                <li>Monitors</li>
+                <li>Keyboards and Mouse</li>
+                <li>Printers and Scanners</li>
+                <li>Computer Components:<br>CPU, GPU, SSD, Hard Drive, RAM, etc.</li>
+            </ul>
+            <img src="./img/itsystemservice.jpg" alt="IT Systems">
+        </div>
+    </div>
+    <div id="Software" class="service-container">
+        <h3 class="service-name">Software Services</h3>
+        <h4>Accomplish your goals efficiently and swiftly with our provided softwares</h4>
+        <h4>Softwares we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Windows OS</li>
+                <li>Microsoft Office</li>
+                <li>Anti-Virus and Anti-Malware Software</li>
+                <li>Cloud Storage</li>
+                <li>Process Management Software</li>
+                <li>Video Conference Software</li>
+            </ul>
+            <img src="./img/softwareservice.jpg" alt="Software">
+        </div>
+    </div>
+    <div id="Development" class="service-container">
+        <h3 class="service-name">Development Services</h3>
+        <h4>Create your presence online with our development services</h4>
+        <h4>Services we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Website Name</li>
+                <li>Website Hosting</li>
+                <li>Company Email</li>
+                <li>Website Design</li>
+                <li>Website Development</li>
+                <li>IOS and Android Application Development</li>
+                <li>Database Management</li>
+                <li>Payment Gateway Integration</li>
+            </ul>
+            <img src="./img/developmentservice.jpg" alt="Development">
+        </div>
+    </div>
+    <div id="Network" class="service-container">
+        <h3 class="service-name">Network Solutions and Services</h3>
+        <h4>Get reliable and fast network solutions and services to accomplish your vision seemlessly</h4>
+        <h4>Network solutions we provide:</h4>
+        <div class="service-content">
+            <ul>
+                <li>Network Server</li>
+                <li>IP Server</li>
+                <li>Network Switches</li>
+                <li>Systems Integration</li>
+                <li>Setup and Installation</li>
+                <li>CCTV Cameras and Installation</li>
+            </ul>
+            <img src="./img/networkservice.jpg" alt="Network">
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://targetlocationit.com">
+            <div class="footer-1">
+                <img src="./icons/logo.svg" alt="Target Location">
+                <h4>TARGET LOCATION</h4>
+                <p>IT Solutions and Services<p>
+            </div>
+        </a>
+        <div class="footer-content">
+            <div class="footer-2">
+                <p>COMPANY</p>
+                <a href="https://targetlocationit.com/aboutus">About Us</a>
+                <a href="https://targetlocationit.com/vision2030">Vision 2030</a>
+                <a href="https://targetlocationit.com/visionandmission">Vision and Mission</a>
+            </div>
+            <div class="footer-3">
+                <a href="#" class="footer-link">OUR SERVICES</a>
+                <div>
+                    <a href="https://targetlocationit.com/ourservices#ITSystems">IT Systems and Accessories</a>
+                    <a href="https://targetlocationit.com/ourservices#Software">Software Services</a>
+                    <a href="https://targetlocationit.com/ourservices#Development">Development Services</a>
+                    <a href="https://targetlocationit.com/ourservices#Network">Network Solutions<br>and Services</a>
+                </div>
+            </div>
+            <div class="footer-4">
+                <a href="https://targetlocationit.com/contactus" class="footer-link">CONTACT US</a>
+                <a href="tel:+966550775889">+966 550775889</a>
+                <a href="mailto:info@targetlcit.com">info@targetlcit.com</a>
+                <a href="https://wa.me/+966550775889" target="_blank">Whatsapp: <br>+966 550775889</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

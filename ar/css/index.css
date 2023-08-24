@@ -1,0 +1,262 @@
+header {
+    position: relative;
+    text-align: left;
+    margin-bottom: -4px;
+}
+.background { 
+    max-width: 100%;
+}
+.title {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    color: #E6F7FF;
+    text-align: center;
+}
+.title > h1 {
+    font: 400 3rem 'Readex Pro';
+    text-align: left;
+}
+.title > h3 {
+    font: 300 1.5rem 'Readex Pro';
+    padding: 0 0 0.8rem 0.5rem;
+    border-bottom: 2px solid red;
+    text-align: left;
+}
+.title > p {
+    font: 300 1.5rem 'Readex Pro';
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
+}
+.action-btn {
+    padding: 1rem;
+    border-radius: 1em;
+    background-color: #0092db;
+    font: 400 1rem 'Readex Pro';
+    color: #E6F7FF;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.44,1.02,.73,.75);
+}
+.action-btn:hover {
+    transform: scale(1.2,1.2);
+    background-color: #d7f2ff;
+    color: #0073ac;
+}
+@media (max-width: 1024px){
+    .title>h1 {
+        font-size: 2.3rem;
+    }
+    .title>h3 {
+        font-size: 1rem;
+    }
+    .title>p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .background{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        object-fit:cover
+    }
+    .title {
+        top: 25%;
+    }
+    .title>h1 {
+        font-size: 2.5rem;
+    }
+    .title>h3 {
+        font-size: 1.2rem;
+    }
+    .title>p {
+        font-size: 1.2rem;
+    }
+    .action-btn {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+}
+
+
+.section-1{
+    display: flex;
+}
+.tagline {
+    width: 35vw;
+    background-color: #CBEEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.tagline > span > p {
+    padding: 1rem;
+    font: 300 2rem 'Readex Pro';
+}
+.tagline > span span {
+    color: #E60000;
+    font-weight: 400;
+    display: block;
+}
+.slideshow {
+    margin: 5rem;
+    width: fit-content;
+    max-width: 40vw;
+}
+.slides > img {
+    width: 100%;
+}
+@media (max-width: 680px){
+    .tagline > span > p {
+        font-size: 1.8rem;
+    }
+    .slideshow {
+        max-width: 50vw;
+    }
+}
+@media (max-width: 600px){
+    .section-1 {
+        flex-direction: column;
+    }
+    .tagline > span span {
+        display: inline;
+    }
+    .tagline {
+        padding: 2rem;
+    }
+    .tagline, .tagline>span{
+        width: 100%;
+    }
+    .slideshow {
+        max-width: 80vw;
+    }
+}
+
+.section-2 {
+    background: #002F47;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid red;
+    padding: 5rem 0;
+}
+.section-2 > p {
+    font: 700 2rem 'Readex Pro';
+    color: #EFFAFF;
+    margin: auto;
+}
+.slider {
+    position: relative;
+    width: 80vw;
+    padding: 1rem 3rem;
+    height: max-content;
+    border-left: 2px solid red;
+    box-shadow: inset 0px 1px 25px 20px rgba(0,34,51,0.7);
+    
+}
+.services {
+    height: 100%;
+}
+.services > .swiper-pagination {
+    transform: translateY(10px);
+    padding-bottom: 5px;
+    background: linear-gradient(90deg, #002F47 0%, #00283c 10%, #00283c 90%, #002F47 100%);
+}
+.service {
+    text-align: center;
+    font: 300 1.2rem 'Readex Pro';
+    background: #0079B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    transition: all 300ms ease-in-out;
+}
+.service > a {
+    text-decoration: none;
+    color: #EFFAFF;
+}
+.service > a >img {
+    display: block;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: all 200ms ease-in-out;
+}
+.service:hover {
+    background: #0091d9;
+}
+.service:hover img {
+    width: 100%;
+}
+@media (max-width: 600px){
+    .section-2 {
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+    .section-2 > p {
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    .slider {
+        border-right: 2px solid red;
+        width: 90vw;
+    }
+    .service:hover img {
+        width: 95%;
+    }
+}
+
+
+.section-3 > p, .section-4 > p {
+    margin: 3rem 4rem;
+    padding: 1rem;
+    font: 300 2rem 'Readex Pro';
+    color: #001e2d;
+    border-bottom: 3px solid red;
+}
+.partners-1, .partners-2, .customers-1, .customers-2, .customers-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+.customers-3 {
+    margin: 2rem 0;
+}
+.partners-1>div, .partners-2>div, .customers-1>div, .customers-2>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.partner, .customer {
+    width: 9rem;
+    margin: 0 3rem;
+}
+.section-4 > p {
+    margin-bottom: 0;
+}
+.section-4{
+    margin-bottom: 4rem;
+}
+@media (max-width: 1024px){
+    .partners-1, .partners-2, .customers-1, .customers-2, .customers-3{
+        flex-wrap: wrap;
+    }
+    .partner, .customer {
+        margin: 0 2rem;
+    }
+}
+@media (max-width: 850px){
+    .partner, .customer {
+        width: 8rem;
+    }
+}
