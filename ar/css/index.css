@@ -119,7 +119,7 @@ header {
 }
 @media (max-width: 600px){
     .section-1 {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .tagline > span span {
         display: inline;
@@ -199,7 +199,7 @@ header {
 }
 @media (max-width: 600px){
     .section-2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content:space-evenly;
     }
     .section-2 > p {
